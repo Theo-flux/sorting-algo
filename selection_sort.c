@@ -37,7 +37,7 @@ void selSort(int *array, int size)
 
 void main()
 {
-    int array[6] = {7, 4, 10, 8, 3, 1};
+    int array[9] = {7, 6, 7, 5, 9, 2, 1, 15, 10};
     int size;
 
     size = sizeof(array) / sizeof(int);

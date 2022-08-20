@@ -1,24 +1,33 @@
 #include "sort.h"
 
-void main()
+void bubbleSort(int *array, int size)
 {
-    int i, j, k, size, temp;
-    int array[10] = {4, 2, 7, 3, 1, 9, 6, 0, 8, 5};
+    int i, j;
 
-    size = sizeof(array) / sizeof(array[0]);
+    i = 0;
 
-    for (i = 0; i < size; i++)
+    while (i < size)
     {
-        for (j = i + 1; j < size; j++)
+        j = i + 1;
+        while (j < size)
         {
             if (array[i] > array[j])
             {
-                temp = array[i];
-                array[i] = array[j];
-                array[j] = temp;
+                swapInt(array, i, j);
             }
+            j++;
         }
+        i++;
     }
+}
 
+void main()
+{
+    int array[9] = {7, 6, 7, 5, 9, 2, 1, 15, 10};
+    int size;
+
+    size = sizeof(array) / sizeof(int);
+    display(array, size);
+    bubbleSort(array, size);
     display(array, size);
 }
