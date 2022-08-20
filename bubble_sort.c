@@ -1,17 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-int display(int *array, int size)
-{
-    int i = 0;
-
-    while (array && i < size)
-    {
-        printf("%d ", array[i]);
-        i++;
-    }
-    printf("\n");
-}
+#include "sort.h"
 
 void main()
 {

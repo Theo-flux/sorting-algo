@@ -1,13 +1,25 @@
-#include "sort.h"
+#ifndef SORT_HEADER
+#define SORT_HEADER
 
-int main()
+#include <stdio.h>
+#include <stdlib.h>
+
+int swapInt(int *array, int x, int y)
 {
-    int i, j;
-    int *array = {4, 2, 7, 3, 1, 9, 6, 0, 8};
-
-    
-
-    for (i = 0; i < size; i++){
-
-    }
+    int temp = array[x];
+    array[x] = array[y];
+    array[y] = temp;
 }
+
+int display(int *array, int size)
+{
+    int i = 0;
+
+    while (array && i < size)
+    {
+        printf("%d ", array[i]);
+        i++;
+    }
+    printf("\n");
+}
+#endif
