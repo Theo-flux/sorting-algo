@@ -1,1 +1,1 @@
-# algo-in-cplusplus
+# algo-in-c
